@@ -42,7 +42,7 @@
         <div class="container-fluid">
             <!--logo-->
             <div class="logo">
-                <a href="index.html">
+                <a href="/">
                     <img src="{% static 'tamplates/assets/img/logo-dark.png' %}" alt="" class="logo-dark">
                     <img src="{% static 'tamplates/assets/img/logo-white.png' %}" alt="" class="logo-white">
                 </a>
@@ -144,7 +144,7 @@
                             <img src="assets/img/blog/6.jpg" alt="">
                         </div>
                         <div class="post-single-content">
-                            <a href="blog-grid.html" class="categorie">travel</a> 
+                            <a href="." class="categorie">travel</a> 
 
 
 
@@ -172,7 +172,7 @@
                                 <ul class="list-inline">
                                     <li class="dot"></li>
                                     
-                                    <li>January 15, 2021</li>
+                                    <li>{{ post.creation }}</li>
                                    
                                 </ul>
                             </div>
@@ -289,7 +289,7 @@
                     <!--widget-author-->
                     <div class="widget">
                         <div class="widget-author">
-                            <a href="" class="image">
+                            <a href="." class="image">
                                 <img src="{% static 'tamplates/assets/img/author/jonaid.jpg' %}" alt="">
                             </a>
                             <h6>
@@ -345,7 +345,7 @@
                                 </div>
                                 <div class="nb">1</div>
                                 <div class="content">
-                                    <p><a href="">{{ post.short_description }} </a></p>
+                                    <p><a href=".">{{ post.short_description }} </a></p>
                                     <small><span class="icon_clock_alt"></span>{{ post.creation }} </small>
                                 </div>
                             </li>

@@ -43,7 +43,7 @@
         <div class="container-fluid">
             <!--logo-->
             <div class="logo">
-                <a href="index.html">
+                <a href="">
                     <img src="{% static 'tamplates/assets/img/logo-dark.png' %}" alt="" class="logo-dark">
                     <img src="{% static 'tamplates/assets/img/logo-white.png' %}" alt="" class="logo-white">
                 </a>
@@ -64,7 +64,7 @@
                    
                    
                     <li class="nav-item ">
-                        <a class="nav-link " href="#" >Page </a>
+                        <a class="nav-link " href="." >Page </a>
                       
                     </li>
                     <li class="nav-item">
@@ -134,7 +134,7 @@
                         <div class="card">
                             <div class="post-card">
                                 <div class="post-card-image">
-                                    <a href="post-default.html">
+                                    <a href="{{ post.get_absolute_url }} ">
                                         <img src="{{ post.thumbnail.url }}" alt="">
                                     </a>
         
